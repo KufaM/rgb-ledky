@@ -92,7 +92,7 @@ void loop() {
           Serial.println("Hodnota mimo rozsah");
           accumulatedNumber = ""; // Vyčištění čísla
         }
-      } else { // Akumulace číslic
+      } else {
         accumulatedNumber += getNumFromCode(receivedIRCode);
         Serial.print("Aktuální číslo: ");
         Serial.println(accumulatedNumber); // Výpis  čísla
